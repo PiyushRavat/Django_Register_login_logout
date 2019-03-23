@@ -10,22 +10,11 @@ def index(request):
 	return render(request, 'index.html', {})
 
 
-# def reg(request):
-# 	if request.method == "POST":
-# 		form = UserCreationForm(request.POST)
-# 		if form.is_valid():
-# 			user = form.save()
-# 			#username = form.cleaned_data.get('username')
-# 			#message.success(request, f"New account created : {username}")
-# 			login(request, user)
-# 			return redirect("home")
-# 		else:
-# 			for msg in form.error_messages:
-# 				print(form.error_messages[msg])
+def reg(request):
+	formA = userformA()
+	return render(request, 'reg.html', {'formA':formA})	
 
-# 	form = UserCreationForm
-# 	return render(request, 'reg.html', {"form":form})
-
+	
 
 #registration
 def reg(request):
