@@ -10,12 +10,6 @@ def index(request):
 	return render(request, 'index.html', {})
 
 
-def reg(request):
-	formA = userformA()
-	return render(request, 'reg.html', {'formA':formA})	
-
-	
-
 #registration
 def reg(request):
 	if request.method == "POST":
