@@ -24,7 +24,7 @@ def reg(request):
 	
 	else:
 		formA = userformA()
-	return render(request, 'reg.html', {'formA':formA})	
+	return render(request, 'reg.html', {'formA':formA})		
 
 
 #Login
